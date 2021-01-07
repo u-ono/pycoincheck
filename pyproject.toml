@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pycoincheck"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Yu Ono <ono.generic@gmail.com>"]
 
