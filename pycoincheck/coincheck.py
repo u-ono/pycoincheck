@@ -1,4 +1,5 @@
 import http.client
+import json
 import time
 import hmac
 import hashlib
@@ -77,4 +78,4 @@ class CoinCheck:
         self.client.request(method, path, data, self.request_headers)
         res = self.client.getresponse()
         data = res.read()
-        return data.decode("utf-8")
+        return json.loads(data.decode("utf-8"))
